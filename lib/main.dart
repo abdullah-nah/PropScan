@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prop_scan/core/router/router_config.dart';
+import 'package:prop_scan/core/style/app_palette.dart';
 import 'package:prop_scan/core/utils/size_config.dart';
 
 void main() {
@@ -16,6 +17,10 @@ class PropScan extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       routerConfig: AppRouter.router,
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.light().copyWith(primary: AppPalette.kColor1),
+      ),
     );
   }
 }

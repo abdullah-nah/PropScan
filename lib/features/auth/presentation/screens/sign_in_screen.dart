@@ -6,6 +6,8 @@ class SignInScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SafeArea(child: SignInScreenBody()));
+    return SafeArea(
+      child: Scaffold(body: SingleChildScrollView(child: SignInScreenBody())),
+    );
   }
 }

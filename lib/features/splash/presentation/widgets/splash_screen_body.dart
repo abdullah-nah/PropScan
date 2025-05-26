@@ -1,10 +1,11 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:prop_scan/core/common/logo.dart';
-import 'package:prop_scan/core/common/responsive_text.dart';
-import 'package:prop_scan/core/common/spaces.dart';
+import 'package:prop_scan/core/common/widgets/logo.dart';
+import 'package:prop_scan/core/common/widgets/responsive_text.dart';
+import 'package:prop_scan/core/common/widgets/spaces.dart';
 import 'package:prop_scan/core/router/routes_config.dart';
+import 'package:prop_scan/core/style/app_gradients.dart';
 import 'package:prop_scan/core/style/app_palette.dart';
 
 class SplashScreenBody extends StatefulWidget {
@@ -27,18 +28,7 @@ class _SplashScreenBodyState extends State<SplashScreenBody> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.bottomLeft,
-          end: Alignment.topRight,
-          colors: [
-            AppPalette.kColor1,
-            AppPalette.kColor2,
-            AppPalette.kColor3,
-            AppPalette.kColor4,
-          ],
-        ),
-      ),
+      decoration: BoxDecoration(gradient: AppGradients.lightGradient),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
