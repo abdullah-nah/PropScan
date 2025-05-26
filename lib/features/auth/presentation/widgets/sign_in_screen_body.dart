@@ -16,7 +16,7 @@ class SignInScreenBody extends StatelessWidget {
         AuthLogoSection(),
         VerticalSpace(16),
         SignInFormSection(),
-        VerticalSpace(12),
+        VerticalSpace(16),
         GestureDetector(
           onTap: () {},
           child: ResponsiveText(

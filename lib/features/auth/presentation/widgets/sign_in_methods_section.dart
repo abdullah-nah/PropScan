@@ -18,7 +18,7 @@ class SignInMethodsSection extends StatelessWidget {
           AuthHaveAnAccount(),
           VerticalSpace(8),
           CustomDivider(),
-          VerticalSpace(16),
+          VerticalSpace(22),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
