@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prop_scan/core/router/router_config.dart';
 import 'package:prop_scan/core/utils/size_config.dart';
 
 void main() {
@@ -12,6 +13,9 @@ class PropScan extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig.init(context);
 
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Scaffold());
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
+      routerConfig: AppRouter.router,
+    );
   }
 }
