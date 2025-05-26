@@ -28,7 +28,7 @@ class SignInFormSection extends StatelessWidget {
               fontStyle: FontStyle.italic,
             ),
           ),
-          VerticalSpace(8),
+          VerticalSpace(12),
           CustomTextField(
             type: TextFieldType.email,
             textInputAction: TextInputAction.next,

@@ -15,7 +15,7 @@ class AuthLogoSection extends StatelessWidget {
     return ClipPath(
       clipper: WaveClipper(),
       child: Container(
-        height: SizeConfig.height * .35,
+        height: SizeConfig.height * .31,
         width: SizeConfig.width,
         decoration: BoxDecoration(gradient: AppGradients.lightGradient),
         child: Column(
