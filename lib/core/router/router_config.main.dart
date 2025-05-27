@@ -23,6 +23,10 @@ abstract final class AppRouter {
               child: const HomeScreen(),
             ),
       ),
+      GoRoute(
+        path: AppRoutes.kPropertyDetailsScreen,
+        builder: (context, state) => const PropertyDetailsScreen(),
+      ),
     ],
   );
 }

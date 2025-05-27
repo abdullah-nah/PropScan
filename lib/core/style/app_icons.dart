@@ -8,7 +8,8 @@ abstract final class AppIcons {
   static const search = Icons.search;
   static const home = Icons.home_outlined;
   static const nearby = Icons.location_on_outlined;
-  static const bookmark = Icons.bookmark_outline;
+  static const bookmarkOutline = Icons.bookmark_outline;
+  static const bookmark = Icons.bookmark;
   static const chat = Icons.chat_outlined;
   static const setting = Icons.settings_outlined;
   static const help = Icons.help_outline;

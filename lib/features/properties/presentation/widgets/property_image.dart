@@ -40,7 +40,7 @@ class PropertyImage extends StatelessWidget {
           child: Container(
             margin: EdgeInsets.only(bottom: bottomMargin),
             decoration: BoxDecoration(
-              color: Colors.black.withValues(alpha: .15),
+              color: Colors.black.withValues(alpha: .2),
               borderRadius: BorderRadius.circular(16),
             ),
           ),
