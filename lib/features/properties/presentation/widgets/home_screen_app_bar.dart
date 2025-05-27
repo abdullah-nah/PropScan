@@ -13,6 +13,7 @@ class HomeScreenAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: AppPalette.white,
+      surfaceTintColor: AppPalette.white,
       automaticallyImplyLeading: false,
       elevation: 0,
       actions: [NotificationButton(notificationNumber: 1)],

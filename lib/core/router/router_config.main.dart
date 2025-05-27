@@ -17,7 +17,11 @@ abstract final class AppRouter {
       ),
       GoRoute(
         path: AppRoutes.kHomeScreen,
-        builder: (context, state) => HomeScreen(),
+        builder:
+            (context, state) => BlocProvider(
+              create: (context) => HomeCubit(),
+              child: HomeScreen(),
+            ),
       ),
     ],
   );

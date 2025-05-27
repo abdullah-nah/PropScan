@@ -28,7 +28,7 @@ class _SplashScreenBodyState extends State<SplashScreenBody> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(gradient: AppGradients.lightGradient),
+      decoration: BoxDecoration(gradient: AppGradients.kGradient1),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,

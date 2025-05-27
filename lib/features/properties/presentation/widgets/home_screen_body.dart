@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prop_scan/core/common/widgets/spaces.dart';
+import 'package:prop_scan/features/properties/presentation/widgets/filter_section.dart';
 import 'package:prop_scan/features/properties/presentation/widgets/search_section.dart';
 
 class HomeScreenBody extends StatelessWidget {
@@ -10,7 +11,13 @@ class HomeScreenBody extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 16),
       child: Column(
-        children: [VerticalSpace(16), SearchSection(), VerticalSpace(16)],
+        children: [
+          VerticalSpace(16),
+          SearchSection(),
+          VerticalSpace(16),
+          FilterSection(),
+          VerticalSpace(16),
+        ],
       ),
     );
   }

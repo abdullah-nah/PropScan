@@ -17,7 +17,7 @@ class AuthSubmitButton extends StatelessWidget {
       child: Ink(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
-          gradient: AppGradients.lightGradient,
+          gradient: AppGradients.kGradient1,
         ),
         child: InkWell(
           onTap: () {

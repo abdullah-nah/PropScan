@@ -7,7 +7,7 @@ class SearchSection extends StatelessWidget {
   const SearchSection({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {    
     return Row(
       children: [
         Expanded(flex: 5, child: SearchTextField()),

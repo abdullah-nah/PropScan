@@ -17,7 +17,7 @@ class AuthLogoSection extends StatelessWidget {
       child: Container(
         height: SizeConfig.height * .31,
         width: SizeConfig.width,
-        decoration: BoxDecoration(gradient: AppGradients.lightGradient),
+        decoration: BoxDecoration(gradient: AppGradients.kGradient1),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
