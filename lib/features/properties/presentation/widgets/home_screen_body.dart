@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:prop_scan/core/common/widgets/spaces.dart';
 import 'package:prop_scan/features/properties/presentation/widgets/filter_section.dart';
 import 'package:prop_scan/features/properties/presentation/widgets/near_properties_section.dart';
+import 'package:prop_scan/features/properties/presentation/widgets/recommendation_section.dart';
 import 'package:prop_scan/features/properties/presentation/widgets/search_section.dart';
 
 class HomeScreenBody extends StatelessWidget {
@@ -19,7 +20,7 @@ class HomeScreenBody extends StatelessWidget {
           FilterSection(),
           VerticalSpace(16),
           NearPropertiesSection(),
-          VerticalSpace(16),
+          RecommendationSection(),
         ],
       ),
     );
