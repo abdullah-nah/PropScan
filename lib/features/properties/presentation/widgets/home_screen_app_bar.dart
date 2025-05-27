@@ -30,7 +30,10 @@ class HomeScreenAppBar extends StatelessWidget implements PreferredSizeWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
             HorizontalSpace(4),
-            Icon(AppIcons.arrowDown),
+            Padding(
+              padding: EdgeInsets.only(top: 6),
+              child: Icon(AppIcons.arrowDown),
+            ),
           ],
         ),
       ),
