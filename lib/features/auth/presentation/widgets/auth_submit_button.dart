@@ -6,7 +6,8 @@ import 'package:prop_scan/core/utils/size_config.dart';
 
 class AuthSubmitButton extends StatelessWidget {
   final String text;
-  const AuthSubmitButton({super.key, required this.text});
+  final void Function() onTap;
+  const AuthSubmitButton({super.key, required this.text, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,9 @@ class AuthSubmitButton extends StatelessWidget {
           gradient: AppGradients.lightGradient,
         ),
         child: InkWell(
-          onTap: () {},
+          onTap: () {
+            onTap();
+          },
           borderRadius: BorderRadius.circular(12),
           child: Container(
             alignment: Alignment.center,

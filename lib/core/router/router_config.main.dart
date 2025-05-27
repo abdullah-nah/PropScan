@@ -15,6 +15,10 @@ abstract final class AppRouter {
         path: AppRoutes.kSignUpScreen,
         builder: (context, state) => SignUpScreen(),
       ),
+      GoRoute(
+        path: AppRoutes.kHomeScreen,
+        builder: (context, state) => HomeScreen(),
+      ),
     ],
   );
 }
