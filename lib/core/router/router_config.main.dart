@@ -5,22 +5,22 @@ abstract final class AppRouter {
     routes: [
       GoRoute(
         path: AppRoutes.kSplashScreen,
-        builder: (context, state) => SplashScreen(),
+        builder: (context, state) => const SplashScreen(),
       ),
       GoRoute(
         path: AppRoutes.kSignInScreen,
-        builder: (context, state) => SignInScreen(),
+        builder: (context, state) => const SignInScreen(),
       ),
       GoRoute(
         path: AppRoutes.kSignUpScreen,
-        builder: (context, state) => SignUpScreen(),
+        builder: (context, state) => const SignUpScreen(),
       ),
       GoRoute(
         path: AppRoutes.kHomeScreen,
         builder:
             (context, state) => BlocProvider(
               create: (context) => HomeCubit(),
-              child: HomeScreen(),
+              child: const HomeScreen(),
             ),
       ),
     ],

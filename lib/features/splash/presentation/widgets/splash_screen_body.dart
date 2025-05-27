@@ -18,7 +18,7 @@ class SplashScreenBody extends StatefulWidget {
 class _SplashScreenBodyState extends State<SplashScreenBody> {
   @override
   void initState() {
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 3), () {
       // ignore: use_build_context_synchronously
       context.pushReplacement(AppRoutes.kSignInScreen);
     });
@@ -28,8 +28,8 @@ class _SplashScreenBodyState extends State<SplashScreenBody> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(gradient: AppGradients.kGradient1),
-      child: Column(
+      decoration: const BoxDecoration(gradient: AppGradients.kGradient1),
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

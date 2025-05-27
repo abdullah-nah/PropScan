@@ -12,13 +12,13 @@ class SignInMethodsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 24),
+      padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
-          AuthHaveAnAccount(),
-          VerticalSpace(8),
-          CustomDivider(),
-          VerticalSpace(22),
+          const AuthHaveAnAccount(),
+          const VerticalSpace(8),
+          const CustomDivider(),
+          const VerticalSpace(22),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [

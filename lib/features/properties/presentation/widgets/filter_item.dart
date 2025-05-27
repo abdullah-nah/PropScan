@@ -33,7 +33,7 @@ class FilterItem extends StatelessWidget {
           onTap: () => homeCubit.selectFilterItem(index),
           borderRadius: BorderRadius.circular(12),
           child: Container(
-            padding: EdgeInsets.symmetric(vertical: 8, horizontal: 14),
+            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 14),
             decoration: BoxDecoration(
               gradient: isSelected ? AppGradients.kGradient2 : null,
               color: isSelected ? null : AppPalette.grey.withValues(alpha: .1),

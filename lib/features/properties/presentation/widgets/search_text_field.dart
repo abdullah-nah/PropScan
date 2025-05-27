@@ -13,12 +13,12 @@ class SearchTextField extends StatelessWidget {
       filled: true,
       fillColor: AppPalette.grey.withValues(alpha: .1),
       border: OutlineInputBorder(
-        borderSide: BorderSide(style: BorderStyle.none, width: 0),
+        borderSide: const BorderSide(style: BorderStyle.none, width: 0),
         borderRadius: BorderRadius.circular(12),
       ),
       hintText: 'Search address or near you',
       hintStyle: TextStyle(fontSize: ResponsiveText.getResponsiveFontSize(13)),
-      prefixIcon: Icon(AppIcons.search),
+      prefixIcon: const Icon(AppIcons.search),
     );
   }
 }

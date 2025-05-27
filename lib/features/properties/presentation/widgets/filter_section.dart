@@ -16,11 +16,11 @@ class FilterSection extends StatelessWidget {
       height: (SizeConfig.height - kToolbarHeight) * (1 / 17),
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         itemBuilder:
             (context, index) =>
                 FilterItem(text: homeCubit.filterItems[index], index: index),
-        separatorBuilder: (context, index) => HorizontalSpace(10),
+        separatorBuilder: (context, index) => const HorizontalSpace(10),
         itemCount: homeCubit.filterItems.length,
       ),
     );

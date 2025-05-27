@@ -30,7 +30,7 @@ class AuthSubmitButton extends StatelessWidget {
             height: SizeConfig.height * .07,
             child: ResponsiveText(
               text,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w600,
                 color: AppPalette.white,

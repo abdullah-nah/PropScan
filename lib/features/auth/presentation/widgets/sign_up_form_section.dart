@@ -14,10 +14,10 @@ class SignUpFormSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 24),
+      padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
-          ResponsiveText(
+          const ResponsiveText(
             'Create Account',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
           ),
@@ -31,35 +31,35 @@ class SignUpFormSection extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
-          VerticalSpace(12),
-          CustomTextField(
+          const VerticalSpace(12),
+          const CustomTextField(
             hintText: 'Name',
-            prefixIcon: const Icon(AppIcons.person),
+            prefixIcon: Icon(AppIcons.person),
             textCapitalization: TextCapitalization.sentences,
             textInputAction: TextInputAction.next,
           ),
-          VerticalSpace(8),
-          CustomTextField(
+          const VerticalSpace(8),
+          const CustomTextField(
             type: TextFieldType.phone,
             textInputAction: TextInputAction.next,
           ),
-          VerticalSpace(8),
-          CustomTextField(
+          const VerticalSpace(8),
+          const CustomTextField(
             type: TextFieldType.email,
             textInputAction: TextInputAction.next,
           ),
-          VerticalSpace(8),
-          CustomTextField(
+          const VerticalSpace(8),
+          const CustomTextField(
             type: TextFieldType.password,
             textInputAction: TextInputAction.next,
           ),
-          VerticalSpace(8),
-          CustomTextField(
+          const VerticalSpace(8),
+          const CustomTextField(
             type: TextFieldType.password,
             hintText: 'Confirm Password',
             textInputAction: TextInputAction.go,
           ),
-          VerticalSpace(24),
+          const VerticalSpace(24),
           AuthSubmitButton(
             text: 'Sign Up',
             onTap: () => context.push(AppRoutes.kHomeScreen),

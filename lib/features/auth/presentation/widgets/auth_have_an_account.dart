@@ -20,7 +20,7 @@ class AuthHaveAnAccount extends StatelessWidget {
               ? "Don't have an account?"
               : "Already have an account?",
         ),
-        HorizontalSpace(4),
+        const HorizontalSpace(4),
         TextButton(
           onPressed: () {
             currentScreen.contains('in')

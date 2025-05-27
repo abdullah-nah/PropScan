@@ -17,5 +17,9 @@ class Assets {
   /// Assets for assetsImagesMicrosoft
   /// assets/images/microsoft.png
   static const String assetsImagesMicrosoft = "assets/images/microsoft.png";
+
+  /// Assets for assetsImagesTest
+  /// assets/images/test.webp
+  static const String assetsImagesTest = "assets/images/test.webp";
 }
 

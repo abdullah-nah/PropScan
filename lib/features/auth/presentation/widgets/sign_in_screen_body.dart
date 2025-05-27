@@ -13,13 +13,13 @@ class SignInScreenBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        AuthLogoSection(),
-        VerticalSpace(16),
-        SignInFormSection(),
-        VerticalSpace(16),
+        const AuthLogoSection(),
+        const VerticalSpace(16),
+        const SignInFormSection(),
+        const VerticalSpace(16),
         GestureDetector(
           onTap: () {},
-          child: ResponsiveText(
+          child: const ResponsiveText(
             'Forgot Password?',
             style: TextStyle(
               color: AppPalette.kColor3,
@@ -27,8 +27,8 @@ class SignInScreenBody extends StatelessWidget {
             ),
           ),
         ),
-        VerticalSpace(8),
-        SignInMethodsSection(),
+        const VerticalSpace(8),
+        const SignInMethodsSection(),
       ],
     );
   }

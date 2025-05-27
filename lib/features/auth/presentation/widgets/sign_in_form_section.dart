@@ -13,15 +13,15 @@ class SignInFormSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 24),
+      padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
-          ResponsiveText(
+          const ResponsiveText(
             'Welcome back',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
           ),
-          VerticalSpace(4),
-          ResponsiveText(
+          const VerticalSpace(4),
+          const ResponsiveText(
             'Please enter your email and password to access your account',
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -30,17 +30,17 @@ class SignInFormSection extends StatelessWidget {
               fontStyle: FontStyle.italic,
             ),
           ),
-          VerticalSpace(12),
-          CustomTextField(
+          const VerticalSpace(12),
+          const CustomTextField(
             type: TextFieldType.email,
             textInputAction: TextInputAction.next,
           ),
-          VerticalSpace(8),
-          CustomTextField(
+          const VerticalSpace(8),
+          const CustomTextField(
             type: TextFieldType.password,
             textInputAction: TextInputAction.go,
           ),
-          VerticalSpace(24),
+          const VerticalSpace(24),
           AuthSubmitButton(
             text: 'Sign In',
             onTap: () {

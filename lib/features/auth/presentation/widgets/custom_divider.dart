@@ -9,17 +9,20 @@ class CustomDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(child: Divider()),
+        const Expanded(child: Divider()),
         Container(
-          padding: EdgeInsets.all(4),
+          padding: const EdgeInsets.all(4),
           margin: const EdgeInsets.symmetric(horizontal: 2),
           decoration: BoxDecoration(
             border: Border.all(color: AppPalette.grey, width: 1),
             borderRadius: BorderRadius.circular(8),
           ),
-          child: ResponsiveText('OR', style: TextStyle(color: AppPalette.grey)),
+          child: const ResponsiveText(
+            'OR',
+            style: TextStyle(color: AppPalette.grey),
+          ),
         ),
-        Expanded(child: Divider()),
+        const Expanded(child: Divider()),
       ],
     );
   }

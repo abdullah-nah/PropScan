@@ -4,7 +4,7 @@ import 'package:prop_scan/core/style/app_palette.dart';
 import 'package:prop_scan/core/utils/size_config.dart';
 
 void main() {
-  runApp(PropScan());
+  runApp(const PropScan());
 }
 
 class PropScan extends StatelessWidget {
@@ -19,7 +19,9 @@ class PropScan extends StatelessWidget {
       routerConfig: AppRouter.router,
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.light().copyWith(primary: AppPalette.kColor1),
+        colorScheme: const ColorScheme.light().copyWith(
+          primary: AppPalette.kColor1,
+        ),
       ),
     );
   }

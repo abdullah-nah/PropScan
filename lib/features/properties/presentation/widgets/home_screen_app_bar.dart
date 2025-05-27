@@ -16,8 +16,8 @@ class HomeScreenAppBar extends StatelessWidget implements PreferredSizeWidget {
       surfaceTintColor: AppPalette.white,
       automaticallyImplyLeading: false,
       elevation: 0,
-      actions: [NotificationButton(notificationNumber: 1)],
-      title: ListTile(
+      actions: const [NotificationButton(notificationNumber: 1)],
+      title: const ListTile(
         contentPadding: EdgeInsets.zero,
         title: ResponsiveText(
           'Location',
