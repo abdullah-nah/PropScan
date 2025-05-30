@@ -13,8 +13,8 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       key: BlocProvider.of<HomeCubit>(context).scaffoldKey,
       appBar: const HomeScreenAppBar(),
-      body: const SingleChildScrollView(child: HomeScreenBody()),
       drawer: const CustomDrawer(),
+      body: const SingleChildScrollView(child: HomeScreenBody()),
     );
   }
 }
