@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 abstract final class AppPalette {
   static const grey = Colors.grey;
   static const white = Colors.white;
+  static const black = Colors.black;
   static const kColor1 = Color(0xFF184e77);
   static const kColor2 = Color(0xFF1e6091);
   static const kColor3 = Color(0xFF1a759f);

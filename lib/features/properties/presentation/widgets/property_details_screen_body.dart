@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:prop_scan/core/common/widgets/spaces.dart';
+import 'package:prop_scan/core/utils/app_assets.dart';
 import 'package:prop_scan/features/properties/presentation/widgets/property_description_section.dart';
+import 'package:prop_scan/features/properties/presentation/widgets/property_gallery_section.dart';
 import 'package:prop_scan/features/properties/presentation/widgets/property_image_with_details.dart';
 import 'package:prop_scan/features/properties/presentation/widgets/property_owner_section.dart';
 
@@ -20,6 +22,16 @@ class PropertyDetailsScreenBody extends StatelessWidget {
           PropertyDescriptionSection(),
           VerticalSpace(16),
           PropertyOwnerSection(),
+          VerticalSpace(16),
+          PropertyGallerySection(
+            images: [
+              Assets.assetsImagesFacebook,
+              Assets.assetsImagesGoogle,
+              Assets.assetsImagesLogo,
+              Assets.assetsImagesMicrosoft,
+              Assets.assetsImagesTest,
+            ],
+          ),
         ],
       ),
     );

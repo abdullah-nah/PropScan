@@ -13,7 +13,7 @@ class PropertyImageWithDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Stack(
       children: [
-        PropertyImage(aspectRatio: 1),
+        PropertyImage(aspectRatio: 1 / 0.85),
         Positioned(top: 0 + 12, right: 0 + 12, child: BookmarkIconButton()),
         Positioned(
           bottom: 0 + 12,
