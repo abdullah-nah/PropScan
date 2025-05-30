@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:prop_scan/core/common/widgets/spaces.dart';
 import 'package:prop_scan/features/properties/presentation/widgets/property_description_section.dart';
 import 'package:prop_scan/features/properties/presentation/widgets/property_image_with_details.dart';
+import 'package:prop_scan/features/properties/presentation/widgets/property_owner_section.dart';
 
 class PropertyDetailsScreenBody extends StatelessWidget {
   const PropertyDetailsScreenBody({super.key});
@@ -15,8 +16,10 @@ class PropertyDetailsScreenBody extends StatelessWidget {
         children: [
           VerticalSpace(16),
           PropertyImageWithDetails(),
-          VerticalSpace(16),
+          VerticalSpace(4),
           PropertyDescriptionSection(),
+          VerticalSpace(16),
+          PropertyOwnerSection(),
         ],
       ),
     );

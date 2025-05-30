@@ -12,6 +12,7 @@ abstract final class AppGradients {
       AppPalette.kColor4,
     ],
   );
+
   static const kGradient2 = LinearGradient(
     begin: Alignment.bottomLeft,
     end: Alignment.topRight,
