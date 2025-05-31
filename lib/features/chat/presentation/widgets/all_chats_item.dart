@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:prop_scan/core/common/widgets/responsive_text.dart';
+import 'package:prop_scan/core/router/routes_config.dart';
 import 'package:prop_scan/core/style/app_palette.dart';
 import 'package:prop_scan/features/chat/presentation/widgets/all_chats_last_message_details.dart';
 
@@ -9,7 +11,7 @@ class AllChatsItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () => context.push(AppRoutes.kChatScreen),
       child: const ListTile(
         leading: AspectRatio(
           aspectRatio: 1,
@@ -25,12 +27,12 @@ class AllChatsItem extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         subtitle: ResponsiveText(
-          'Ok, let me check absadbsdbsafasfasdsavsdasadfsdafasdvasbasbsdafsadfasdfasdfasd',
+          'Ok, let me check',
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(color: AppPalette.grey),
         ),
-        trailing: AllChatsLastMessageDetails(isUnread: false),
+        trailing: AllChatsLastMessageDetails(isUnread: true),
       ),
     );
   }

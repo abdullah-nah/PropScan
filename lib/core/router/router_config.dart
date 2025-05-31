@@ -4,6 +4,7 @@ import 'package:prop_scan/core/router/routes_config.dart';
 import 'package:prop_scan/features/auth/presentation/screens/sign_in_screen.dart';
 import 'package:prop_scan/features/auth/presentation/screens/sign_up_screen.dart';
 import 'package:prop_scan/features/chat/presentation/screens/all_chats_screen.dart';
+import 'package:prop_scan/features/chat/presentation/screens/chat_screen.dart';
 import 'package:prop_scan/features/properties/presentation/cubits/home_cubit.dart';
 import 'package:prop_scan/features/properties/presentation/screens/home_screen.dart';
 import 'package:prop_scan/features/properties/presentation/screens/property_details_screen.dart';

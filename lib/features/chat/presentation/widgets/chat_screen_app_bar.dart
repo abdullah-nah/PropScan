@@ -6,16 +6,13 @@ import 'package:prop_scan/core/style/app_palette.dart';
 import 'package:prop_scan/core/utils/size_config.dart';
 import 'package:prop_scan/features/chat/presentation/widgets/app_bar_action_button.dart';
 
-class AllChatsScreenAppBar extends StatelessWidget
-    implements PreferredSizeWidget {
-  const AllChatsScreenAppBar({super.key});
+class ChatScreenAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const ChatScreenAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       titleSpacing: 0,
-      backgroundColor: AppPalette.white,
-      surfaceTintColor: AppPalette.white,
       title: const _AppBarTitle(),
       actions: const [_AppBarActions()],
     );
@@ -30,16 +27,23 @@ class _AppBarTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+    return const Row(
       children: [
-        ResponsiveText(
-          'Hello,',
-          style: TextStyle(fontSize: 12, color: AppPalette.grey),
-        ),
-        ResponsiveText(
-          'Abdullah',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+        CircleAvatar(child: ResponsiveText('A')),
+        HorizontalSpace(8),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ResponsiveText(
+              'Abdullah Al-Nahlawi',
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            ),
+            ResponsiveText(
+              'Online',
+              style: TextStyle(color: AppPalette.grey, fontSize: 12),
+            ),
+          ],
         ),
       ],
     );
@@ -55,7 +59,7 @@ class _AppBarActions extends StatelessWidget {
       padding: const EdgeInsets.only(right: 8),
       child: Row(
         children: [
-          AppBarActionButton(icon: AppIcons.search, onTap: () {}),
+          AppBarActionButton(icon: AppIcons.phone, onTap: () {}),
           const HorizontalSpace(8),
           AppBarActionButton(icon: AppIcons.more, onTap: () {}),
         ],

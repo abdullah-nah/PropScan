@@ -31,6 +31,10 @@ abstract final class AppRouter {
         path: AppRoutes.kAllChatsScreen,
         builder: (context, state) => const AllChatsScreen(),
       ),
+      GoRoute(
+        path: AppRoutes.kChatScreen,
+        builder: (context, state) => const ChatScreen(),
+      ),
     ],
   );
 }
