@@ -12,15 +12,18 @@ class CustomIconButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: 1,
-      child: Container(
-        padding: const EdgeInsets.all(8),
-        decoration: BoxDecoration(
-          gradient: AppGradients.kGradient1,
-          borderRadius: BorderRadius.circular(12),
+    return GestureDetector(
+      onTap: onPressed,
+      child: AspectRatio(
+        aspectRatio: 1,
+        child: Container(
+          padding: const EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            gradient: AppGradients.kGradient1,
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: icon,
         ),
-        child: icon,
       ),
     );
   }

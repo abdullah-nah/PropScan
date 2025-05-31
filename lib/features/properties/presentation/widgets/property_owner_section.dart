@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:prop_scan/core/common/widgets/custom_icon_button.dart';
 import 'package:prop_scan/core/common/widgets/responsive_text.dart';
 import 'package:prop_scan/core/common/widgets/spaces.dart';
+import 'package:prop_scan/core/router/routes_config.dart';
 import 'package:prop_scan/core/style/app_icons.dart';
 import 'package:prop_scan/core/style/app_palette.dart';
 import 'package:prop_scan/core/utils/size_config.dart';
@@ -57,7 +59,7 @@ class _ContactButtons extends StatelessWidget {
           const HorizontalSpace(8),
           CustomIconButton(
             icon: const Icon(AppIcons.chat, color: AppPalette.white),
-            onPressed: () {},
+            onPressed: () => context.push(AppRoutes.kAllChatsScreen),
           ),
         ],
       ),

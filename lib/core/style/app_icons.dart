@@ -18,4 +18,5 @@ abstract final class AppIcons {
   static const bathroom = Icons.bathtub_outlined;
   static const phone = Icons.phone_outlined;
   static const menue = Icons.menu_outlined;
+  static const more = Icons.more_vert;
 }
