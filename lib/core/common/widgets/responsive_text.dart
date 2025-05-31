@@ -5,13 +5,17 @@ class ResponsiveText extends StatelessWidget {
   final String text;
   final TextAlign? textAlign;
   final TextStyle? style;
-  const ResponsiveText(this.text, {super.key, this.style, this.textAlign});
+  final int? maxLines;
+  final TextOverflow? overflow;
+  const ResponsiveText(this.text, {super.key, this.style, this.textAlign, this.maxLines, this.overflow});
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
       textAlign: textAlign,
+      maxLines: maxLines,
+      overflow: overflow,
       style: style?.copyWith(
         fontSize:
             style?.fontSize != null

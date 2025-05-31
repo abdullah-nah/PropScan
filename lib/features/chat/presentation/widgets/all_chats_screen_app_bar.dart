@@ -12,6 +12,8 @@ class AllChatsScreenAppBar extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: AppPalette.white,
+      surfaceTintColor: AppPalette.white,
       title: const _AppBarTitle(),
       actions: [
         Padding(
